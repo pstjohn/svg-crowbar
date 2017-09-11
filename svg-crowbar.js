@@ -168,7 +168,7 @@
         svg.setAttributeNS(prefix.xmlns, "xmlns:xlink", prefix.xlink);
       }
 
-      var source = (new XMLSerializer()).serializeToString(svg).replace('</style>', '<![CDATA[' + styles + ']]></style>');
+      var source = (new XMLSerializer()).serializeToString(svg)
       var rect = svg.getBoundingClientRect();
       svgInfo.push({
         top: rect.top,
